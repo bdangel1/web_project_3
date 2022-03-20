@@ -6,7 +6,9 @@
   background-position: center;
   margin: 0 auto;
   position: relative;
-  max-height: 740px;
+  min-height: 740px;
+  display: flex;
+  justify-content: center;
 }
 .cover::before {
   content: "";
@@ -26,10 +28,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  margin: auto;
+  align-self: center;
   max-width: 656px;
   z-index: 1;
+  position: relative;
 }
 .cover__title {
   font-weight: 900;
@@ -37,7 +39,6 @@
   line-height: 76px;
   max-width: 656px;
   text-align: center;
-  margin-top: 92px;
 }
 .cover__paragraph {
   font-size: 18px;
@@ -59,17 +60,20 @@
   font-size: 18px;
   line-height: 21.78px;
   text-decoration: none;
-  margin-bottom: 92px;
+  display: block;
+  padding: 20px 13px;
 }
 
 @media screen and(max-width: 960px) {
   .cover {
-    max-width: 768px;
+    max-width: 100%;
+    min-height: 746px;
   }
 }
 @media screen and(max-width:600px) {
   .cover {
-    max-width: 320px;
+    max-width: 100%;
+    min-height: 254px;
   }
   .cover__title {
     max-width: 288px;

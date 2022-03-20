@@ -18,7 +18,18 @@
 }
 
 @media screen and(max-width: 960px) {
-  .page__content {
+  .page {
     max-width: 768px;
+  }
+  .page__content {
+    max-width: 100%;
+  }
+}
+@media screen and(max-width: 600px) {
+  .page {
+    max-width: 320px;
+  }
+  .page__content {
+    max-width: 100%;
   }
 }
