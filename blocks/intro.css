@@ -1,8 +1,7 @@
 .intro {
-  margin-top: 92px;
-  margin-left: 148px;
-  max-width: 785px;
-  margin-bottom: 0;
+  margin: 92px auto 0;
+  max-width: 984px;
+  border: 1px solid red;
 }
 
 .intro__title {
@@ -34,7 +33,24 @@
   margin-top: 32px;
 }
 @media screen and(max-width: 960px) {
-  .lead {
+  .intro {
     max-width: 720px;
+  }
+  .intro__title {
+    max-width: 100%;
+  }
+}
+@media screen and(max-width:600px) {
+  .intro {
+    max-width: 288px;
+  }
+  .intro__title {
+    max-width: 100;
+  }
+  .intro__description {
+    max-width: 100%;
+  }
+  .intro__artist {
+    max-width: 100%;
   }
 }
