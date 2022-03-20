@@ -59,7 +59,7 @@
 }
 .place__button:hover {
   background-color: #0063d2;
-
+}
 
 @media screen and(max-width:960px) {
   .place {
