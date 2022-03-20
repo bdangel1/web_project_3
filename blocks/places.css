@@ -48,22 +48,18 @@
 .place__button {
   background-color: #0278fe;
   max-width: 248px;
-  max-height: 48px;
   border-radius: 4px;
   text-align: center;
   border: none;
-}
-.place__button:hover {
-  color: #0063d2;
-}
-.button__link {
   color: #ffffff;
   font-weight: 600;
   font-size: 18px;
   line-height: 21.78px;
-  text-align: center;
   text-decoration: none;
 }
+.place__button:hover {
+  background-color: #0063d2;
+
 
 @media screen and(max-width:960px) {
   .place {

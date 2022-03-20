@@ -50,18 +50,18 @@
 }
 .cover__button {
   background-color: #0278fe;
+  max-width: 248px;
   border-radius: 4px;
   align-self: center;
-  margin-bottom: 92px;
   border: none;
-}
-.cover__button-link {
+  color: #ffffff;
+  font-weight: 600;
   font-size: 18px;
   line-height: 21.78px;
-  color: white;
-  max-width: 97px;
   text-decoration: none;
-  padding: 13px 20px 13px 28px;
+  margin-bottom: 92px;
+}
+
 }
 @media screen and(max-width: 960px) {
   .cover {
