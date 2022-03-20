@@ -5,24 +5,18 @@
   margin: 91px auto;
   max-width: 984px;
   max-height: 983px;
-  margin: 0 auto;
 }
 .lead__title {
   max-width: 793px;
-  margin: 0 auto;
-  font-family: "inter", Arial, Helvetica, sans-serif;
   font-weight: 900 bolder;
-  font-style: normal;
   font-size: 96px;
   max-height: 200px;
   text-align: center;
   line-height: 100px;
+  margin: 0 auto;
 }
 .lead__subtitle {
   margin: 32px auto 54px;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: thin;
   font-size: 30px;
   line-height: 36px;
   max-width: 720px;
