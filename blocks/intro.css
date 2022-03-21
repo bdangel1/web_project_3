@@ -7,41 +7,42 @@
   max-width: 785px;
   font-weight: bold;
   font-size: 54px;
-  line-height: 54px;
+  line-height: 58px;
+  margin: 0;
 }
 .intro__description {
   font-size: 24px;
   line-height: 34px;
   max-width: 720px;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 .intro__artist {
   max-width: 720px;
   font-size: 24px;
   line-height: 34px;
   text-align: right;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 
 .intro__content {
   max-width: 720px;
   margin-top: 32px;
+  margin-bottom: 0;
 }
 @media screen and(max-width: 960px) {
   .intro {
     max-width: 720px;
+    margin: 0 auto;
   }
-  .intro__title {
-    max-width: 100%;
+  .intro__description {
   }
 }
 @media screen and(max-width:600px) {
   .intro {
     max-width: 288px;
   }
-  .intro__title {
-    max-width: 100;
-  }
+
   .intro__description {
     max-width: 100%;
   }

@@ -4,7 +4,6 @@
   justify-content: center;
   margin: 91px auto;
   max-width: 984px;
-  max-height: 983px;
 }
 .lead__title {
   max-width: 793px;
@@ -36,7 +35,6 @@
     max-width: 720px;
   }
   .lead__image {
-    max-width: 100%;
     max-height: 480px;
   }
 }
@@ -51,7 +49,6 @@
     max-width: 288px;
   }
   .lead__image {
-    max-width: 100%;
     max-height: 200px;
   }
 }

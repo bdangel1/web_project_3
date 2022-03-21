@@ -1,24 +1,23 @@
 .gallery {
-  margin-top: 118px;
-  margin-bottom: 0;
+  margin-top: 90px;
+  margin-bottom: 0 auto;
   max-width: 100%;
 }
 .gallery__list {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-gap: 16px 16px;
+  gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  margin: 0 auto;
 }
 
 .gallery__item {
   max-width: 284px;
 }
+
 @media screen and(max-width: 600px) {
   .gallery__list {
     grid-gap: 12px;
-  }
-  .gallery__item {
-    max-width: 100%;
   }
 }

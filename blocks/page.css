@@ -1,5 +1,5 @@
 .page {
-  background-color: black;
+  background-color: #2a2c2f;
   max-width: 1280px;
   background-position: center;
   margin: 0 auto;
@@ -28,8 +28,5 @@
 @media screen and(max-width: 600px) {
   .page {
     max-width: 320px;
-  }
-  .page__content {
-    max-width: 100%;
   }
 }
