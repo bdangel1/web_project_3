@@ -35,8 +35,6 @@
     max-width: 720px;
     margin: 0 auto;
   }
-  .intro__description {
-  }
 }
 @media screen and(max-width:600px) {
   .intro {
@@ -47,6 +45,9 @@
     max-width: 100%;
   }
   .intro__artist {
+    max-width: 100%;
+  }
+  .intro__title {
     max-width: 100%;
   }
 }

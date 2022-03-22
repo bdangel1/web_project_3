@@ -4,6 +4,10 @@
   grid-gap: 40px 48px;
   grid-template-columns: 460px 1fr;
   grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "title website"
+    "image text"
+    "button text";
 }
 
 .place__title {
@@ -13,11 +17,13 @@
   line-height: 76px;
   margin-top: 0;
   margin-bottom: 0;
+  grid-area: title;
 }
 
 .place__website {
   max-width: 456px;
   align-self: end;
+  grid-area: website;
 }
 .place__artist {
   font-size: 12px;
@@ -35,27 +41,22 @@
 }
 .place__image {
   max-width: 460px;
+  grid-area: image;
 }
 
 .place__details {
-  max-width: 484px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin: auto;
-}
-.place__details:last-of-type {
-  margin: 0;
-}
-.place__details_paragraph {
   display: grid;
   gap: 25px;
-  grid-row: 2/-1;
+  grid-row: 2/4;
   grid-column: 2/-1;
   grid-template-rows: auto auto 1fr;
+  grid-area: text;
+}
+.place__details:first-of-type {
+  margin: 0 auto;
 }
 
-.places__paragraph {
+.place__paragraph {
   max-width: 100%;
   font-size: 18px;
   line-height: 29.34px;
@@ -75,27 +76,10 @@
   opacity: 100%;
   display: block;
   padding: 20px 13px;
+  max-height: 48px;
+  grid-area: button;
 }
 .place__button:hover {
-  background-color: #0063d2;
-}
-.place__button-size {
-  background-color: #0278fe;
-  max-width: 248px;
-  border-radius: 4px;
-  text-align: center;
-  border: none;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21.78px;
-  text-decoration: none;
-  opacity: 100%;
-  display: block;
-  padding: 20px 13px;
-  max-height: 25%;
-}
-.place__button-size:hover {
   background-color: #0063d2;
 }
 
@@ -104,10 +88,8 @@
     grid-template-columns: 340px 1fr;
     grid-gap: 28px 48px;
   }
-  .place__details {
-    max-width: 352px;
-  }
-  
+}
+
 @media screen and(max-width:600px) {
   .place {
     grid-template-columns: 320px, 1fr;
