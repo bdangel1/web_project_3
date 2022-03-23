@@ -4,7 +4,6 @@
   background-position: center;
   margin: 0 auto;
   height: 100%;
-  border: 1px solid red;
 }
 .page__content {
   max-width: 1184px;
@@ -27,7 +26,10 @@
   }
 }
 @media screen and(max-width: 600px) {
-  .page__content {
+  .page {
     max-width: 320px;
+  }
+  .page__content {
+    max-width: 288px;
   }
 }

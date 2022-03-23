@@ -1,6 +1,7 @@
 .gallery {
   margin: 90px auto 0;
   max-width: 100%;
+  align-content: center;
 }
 .gallery__list {
   padding: 0;
@@ -16,6 +17,7 @@
 
 @media screen and(max-width: 600px) {
   .gallery__list {
-    grid-gap: 12px;
+    gap: 12px;
+    align-content: center;
   }
 }

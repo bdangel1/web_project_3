@@ -1,12 +1,12 @@
 .place {
-  max-width: 100%;
+  max-width: 987px;
   display: grid;
   grid-gap: 40px 48px;
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "title website"
-    "image text"
-    "button text";
+    "image texts"
+    "button texts";
 }
 
 .place__title {
@@ -48,7 +48,7 @@
   gap: 25px;
   grid-row: 2/4;
   grid-column: 2/-1;
-  grid-area: text;
+  grid-area: texts;
 }
 .place__details:first-of-type {
   margin: 0 auto;
@@ -62,8 +62,8 @@
 }
 .place__button {
   background-color: #0278fe;
-  max-width: 248px;
   border-radius: 4px;
+  max-width: 248px;
   text-align: center;
   border: none;
   color: #ffffff;
@@ -71,7 +71,6 @@
   font-size: 18px;
   line-height: 21.78px;
   text-decoration: none;
-  opacity: 100%;
   display: block;
   padding: 20px 13px;
   max-height: 48px;
@@ -83,37 +82,46 @@
 
 @media screen and(max-width:960px) {
   .place {
-    grid-gap: 28px 48px;
+    gap: 46px 28px;
   }
 }
 
 @media screen and(max-width:600px) {
   .place {
-    max-width: 100%;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-rows: auto auto 1fr;
+    max-width: 320px;
+    row-gap: 30px;
     grid-template-areas:
       "title"
       "website"
       "image"
-      "text"
+      "texts"
       "button";
   }
   .place__title {
     max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    grid-area: title;
+    margin: auto;
   }
   .place__website {
     max-width: 288px;
+    grid-area: website;
+    margin: auto;
   }
+
   .place__image {
-    max-width: 100%;
+    max-width: 320px;
+    grid-area: image;
   }
-  .place__details {
-    grid-area: text;
+  .place__paragraph {
     max-width: 288px;
+
+    grid-area: texts;
   }
   .place__button {
     margin: auto;
+    max-width: 288px;
+    grid-area: button;
   }
 }
