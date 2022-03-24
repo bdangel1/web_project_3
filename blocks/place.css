@@ -1,7 +1,7 @@
 .place {
   max-width: 987px;
   display: grid;
-  grid-gap: 40px 48px;
+  gap: 40px 48px;
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "title website"
@@ -42,24 +42,21 @@
   max-width: 460px;
   grid-area: image;
 }
-
 .place__details {
-  display: grid;
-  gap: 25px;
-  grid-row: 2/4;
-  grid-column: 2/-1;
   grid-area: texts;
-}
-.place__details:first-of-type {
-  margin: 0 auto;
+  max-width: 484px;
 }
 
 .place__paragraph {
   max-width: 100%;
   font-size: 18px;
   line-height: 29.34px;
+  margin: 25px auto 0;
+}
+.place__paragraph:first-of-type {
   margin: auto;
 }
+
 .place__button {
   background-color: #0278fe;
   border-radius: 4px;
@@ -84,12 +81,26 @@
   .place {
     gap: 46px 28px;
   }
+  .place__title {
+    max-width: 340px;
+  }
+  .place__artist {
+    max-width: 352px;
+  }
+  .place__image {
+    max-width: 340px;
+  }
+  .place__details {
+    max-width: 352px;
+  }
 }
 
 @media screen and(max-width:600px) {
   .place {
     max-width: 320px;
-    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     grid-template-areas:
       "title"
       "website"
@@ -102,25 +113,23 @@
     font-size: 32px;
     line-height: 35px;
     grid-area: title;
-    margin: auto;
   }
   .place__website {
     max-width: 288px;
     grid-area: website;
-    margin: auto;
   }
 
   .place__image {
-    max-width: 320px;
+    max-width: 100%;
     grid-area: image;
+  }
+  .place__details {
+    grid-area: texts;
   }
   .place__paragraph {
     max-width: 288px;
-
-    grid-area: texts;
   }
   .place__button {
-    margin: auto;
     max-width: 288px;
     grid-area: button;
   }
