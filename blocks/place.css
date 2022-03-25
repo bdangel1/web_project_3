@@ -1,6 +1,5 @@
 .place {
-  margin: 0 auto;
-  max-width: 100%;
+  margin: auto;
   display: grid;
   gap: 40px 48px;
   grid-template-rows: auto auto 1fr;
@@ -12,7 +11,6 @@
 }
 
 .place__title {
-  max-width: 100%;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
@@ -44,7 +42,7 @@
 }
 .place__details {
   grid-area: texts;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .place__paragraph {
@@ -53,7 +51,7 @@
   margin: 25px auto 0;
 }
 .place__paragraph:first-of-type {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .place__button {
@@ -80,6 +78,11 @@
   .place {
     grid-template-columns: 340px 1fr;
     gap: 46px 28px;
+    max-width: 720px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
   }
   .place__paragraph {
     font-size: 16px;
@@ -87,10 +90,10 @@
   }
 }
 
-@media screen and(max-width: 650px) {
+@media screen and(max-width: 600px) {
   .place {
+    max-width: 320px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     gap: 30px;
     grid-template-areas:
       "title"
