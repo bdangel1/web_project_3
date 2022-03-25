@@ -1,7 +1,6 @@
 .gallery {
   margin: 90px auto 0;
   max-width: 100%;
-  align-content: center;
 }
 .gallery__list {
   padding: 0;
@@ -9,14 +8,22 @@
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  margin: auto;
 }
 
 .gallery__item {
   max-width: 284px;
 }
+@media screen and (max-width: 960px) {
+  .gallery__list {
+    grid-template-columns: repeat(auto-fit, minmax(352px 1fr));
+    margin: 0 auto;
+  }
+}
 
 @media screen and(max-width: 600px) {
   .gallery__list {
+    grid-template-columns: 1fr;
     gap: 12px;
     align-content: center;
   }

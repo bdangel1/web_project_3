@@ -1,8 +1,10 @@
 .place {
-  max-width: 987px;
+  margin: 0 auto;
+  max-width: 100%;
   display: grid;
   gap: 40px 48px;
   grid-template-rows: auto auto 1fr;
+  grid-template-columns: 460px 1fr;
   grid-template-areas:
     "title website"
     "image texts"
@@ -10,7 +12,7 @@
 }
 
 .place__title {
-  max-width: 460px;
+  max-width: 100%;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
@@ -20,7 +22,6 @@
 }
 
 .place__website {
-  max-width: 456px;
   align-self: end;
   grid-area: website;
 }
@@ -39,16 +40,14 @@
   padding: 0;
 }
 .place__image {
-  max-width: 460px;
   grid-area: image;
 }
 .place__details {
   grid-area: texts;
-  max-width: 484px;
+  margin: auto;
 }
 
 .place__paragraph {
-  max-width: 100%;
   font-size: 18px;
   line-height: 29.34px;
   margin: 25px auto 0;
@@ -79,27 +78,19 @@
 
 @media screen and(max-width:960px) {
   .place {
+    grid-template-columns: 340px 1fr;
     gap: 46px 28px;
   }
-  .place__title {
-    max-width: 340px;
-  }
-  .place__artist {
-    max-width: 352px;
-  }
-  .place__image {
-    max-width: 340px;
-  }
-  .place__details {
-    max-width: 352px;
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26.08px;
   }
 }
 
-@media screen and(max-width:600px) {
+@media screen and(max-width: 650px) {
   .place {
-    max-width: 320px;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 30px;
     grid-template-areas:
       "title"
@@ -109,28 +100,7 @@
       "button";
   }
   .place__title {
-    max-width: 288px;
     font-size: 32px;
     line-height: 35px;
-    grid-area: title;
-  }
-  .place__website {
-    max-width: 288px;
-    grid-area: website;
-  }
-
-  .place__image {
-    max-width: 100%;
-    grid-area: image;
-  }
-  .place__details {
-    grid-area: texts;
-  }
-  .place__paragraph {
-    max-width: 288px;
-  }
-  .place__button {
-    max-width: 288px;
-    grid-area: button;
   }
 }
