@@ -9,18 +9,22 @@
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   margin: auto;
+  max-width: 100%;
 }
 
 .gallery__item {
   max-width: 100%;
 }
+
 @media screen and (max-width: 960px) {
   .gallery {
     max-width: 720px;
   }
   .gallery__list {
     grid-template-columns: repeat(auto-fit, minmax(352px 1fr));
-    margin: 0 auto;
+  }
+  .gallery__item {
+    max-width: 352px;
   }
 }
 

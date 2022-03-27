@@ -4,7 +4,7 @@
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 92px auto;
+  margin: 92px auto 0;
   position: relative;
   min-height: 740px;
   display: flex;
@@ -61,22 +61,29 @@
   line-height: 21.78px;
   text-decoration: none;
   display: block;
-  padding: 20px 13px;
+  padding: 13px 20px;
 }
 .cover__button:hover {
   background-color: #0063d2;
 }
 
-@media screen and(max-width: 960px) {
+@media screen and (max-width: 960px) {
   .cover {
     min-height: 746px;
   }
 }
-@media screen and(max-width:600px) {
+@media screen and (max-width: 600px) {
   .cover {
     min-height: 254px;
+    margin-top: 64px;
   }
   .cover__title {
     max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .cover__paragraph {
+    font-size: 14px;
+    line-height: 16px;
   }
 }

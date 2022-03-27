@@ -41,7 +41,7 @@
   }
 
   .intro__description {
-    margin: auto;
+    margin: 40px auto 0;
 
     line-height: 30px;
   }
@@ -49,5 +49,7 @@
   .intro__title {
     margin: auto;
     text-align: center;
+    font-size: 32px;
+    line-height: 35px;
   }
 }
