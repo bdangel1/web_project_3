@@ -68,7 +68,7 @@
   text-decoration: none;
   display: block;
   padding: 13px 20px;
-  max-height: 48px;
+  height: 26px;
   grid-area: button;
 }
 .place__button:hover {
