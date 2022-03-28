@@ -51,7 +51,6 @@
 }
 .cover__button {
   background-color: #0278fe;
-  max-width: 248px;
   border-radius: 4px;
   align-self: center;
   border: none;
@@ -85,5 +84,6 @@
   .cover__paragraph {
     font-size: 14px;
     line-height: 16px;
+    margin: 16px auto;
   }
 }

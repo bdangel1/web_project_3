@@ -122,7 +122,7 @@
   }
   .place__button {
     margin: auto;
-    min-width: 288px;
+    width: 288px;
   }
   .place__details {
     max-width: 288px;

@@ -24,7 +24,7 @@
     grid-template-columns: repeat(auto-fit, minmax(352px 1fr));
   }
   .gallery__item {
-    max-width: 352px;
+    width: 352px;
   }
 }
 
@@ -36,5 +36,8 @@
     grid-template-columns: 1fr;
     gap: 12px;
     align-content: center;
+  }
+  .gallery__item {
+    max-width: 100%;
   }
 }

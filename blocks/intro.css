@@ -33,11 +33,13 @@
 @media screen and (max-width: 960px) {
   .intro {
     max-width: 720px;
+    margin-top: 88px;
   }
 }
 @media screen and (max-width: 600px) {
   .intro {
     max-width: 288px;
+    margin-top: 64px;
   }
 
   .intro__description {
@@ -48,7 +50,6 @@
 
   .intro__title {
     margin: auto;
-    text-align: center;
     font-size: 32px;
     line-height: 35px;
   }
