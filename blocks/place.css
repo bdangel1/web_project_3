@@ -68,7 +68,7 @@
   text-decoration: none;
   display: block;
   padding: 13px 20px;
-  height: 26px;
+  height: min-content;
   grid-area: button;
 }
 .place__button:hover {
